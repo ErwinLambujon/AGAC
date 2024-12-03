@@ -7,7 +7,7 @@ import numpy as np
 @st.cache_resource
 def load_model():
     try:
-        return YOLO("best.pt")  # Ensure 'best.pt' is a classification model
+        return YOLO("secondmodel_best.pt")  # Ensure 'best.pt' is a classification model
     except Exception as e:
         st.error(f"Error loading model: {e}")
         return None
