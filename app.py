@@ -30,7 +30,7 @@ def main():
             model = load_model()
 
             # Preprocess: Convert image to numpy array and resize to the model's input size
-            image_array = np.array(image.resize((640, 640)))  # Use the size expected by the model
+            image_array = np.array(image.resize((224, 224)))  # Use the size expected by the model
 
             # Predict using the YOLO classification model
             if model:
