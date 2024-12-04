@@ -71,7 +71,10 @@ def main():
                                 gallstone_confidence_percentage = gallstone_confidence * 100
 
                                 # Display gallstone classification results
-                                st.write(f"**Gallstone Prediction:** {gallstone_predicted_class}")
+                                if gallstone_predicted_class == "cholelithiasis":
+                                    st.write(f"**Gallstone Prediction:** Has gallstones")
+                                else:
+                                    st.write(f"**Gallstone Prediction:** No gallstones")
                                 st.write(f"**Confidence:** {gallstone_confidence_percentage:.2f}%")
                     else:
                         image_confidence_percentage = confidence * 100
