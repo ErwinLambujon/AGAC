@@ -22,8 +22,8 @@ def load_gallstone_model():
 
 def main():
     # Streamlit UI
-    st.title("Gallstone Detection System")
-    st.write("Upload an image to detect gallstones.")
+    st.title("Gallstone Classification System")
+    st.write("Upload an image to classify gallstones.")
 
     # File upload
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
