@@ -55,7 +55,7 @@ def main():
                     confidence_percentage = confidence * 100
 
                     # If it is an ultrasound image, classify for gallstones
-                    if predicted_class.lower() == "ultrasound images" and confidence >= 0.7:  # Threshold confidence
+                    if predicted_class.lower() == "ultrasound images" and confidence >= 0.9:  # Threshold confidence
                         
                         # Step 2: If it's an ultrasound image, classify for gallstones
                         if gallstone_model:
